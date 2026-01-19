@@ -1,0 +1,533 @@
+.pageFrame {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    /* Черный слой */ url("/images/mainFrame.jpg") 45% 55% / cover no-repeat; /* Фото */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.pageHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  isolation: isolate;
+
+  width: 100%;
+  height: 201px;
+
+  background: rgba(0, 0, 0, 0.63);
+}
+
+.logoFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 593px;
+  height: 201px;
+}
+
+.navigateFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+}
+
+.navigateText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+
+  color: #ffffff;
+}
+
+.contactFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  position: absolute;
+  width: 394px;
+  height: 202px;
+  left: 1514px;
+  top: -1px;
+}
+
+.contactText {
+  width: 304px;
+  height: 78px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+
+  color: #ffffff;
+}
+.mainFrame {
+  /* Frame 3 */
+
+  width: 100%;
+  height: 880px;
+  left: 0px;
+  top: 199px;
+
+  flex: none;
+}
+
+.mainContentFrame {
+  /* Frame 7 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  position: absolute;
+  width: 912px;
+  height: 562px;
+  left: calc(50% - 912px / 2);
+  top: calc(50% - 262px / 2);
+
+  /* background: rgba(0, 0, 0, 0.56); */
+  border-radius: 50px;
+}
+
+.mainContentFrameHeaderText {
+  width: 853px;
+  height: 158px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #ffffff;
+}
+
+.mainContentFrameText {
+  /* Монтаж любой сложности. Оперативный выезд. Гарантия 1 год. */
+
+  width: 853px;
+  height: 79px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #ffffff;
+}
+
+.buttonMainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 393px;
+  height: 105px;
+
+  background: #b3a23e;
+  border-radius: 40px;
+}
+
+.buttonMainContentText {
+  width: 186px;
+  height: 48px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+
+.pageAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  position: relative;
+  width: 100%;
+  height: 1080px;
+
+  background: #f6f6f6;
+}
+
+.aboutHeaderFrame {
+  /* Frame 10 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 800px;
+  height: 300px;
+}
+
+.aboutHeaderFrameText {
+  /* Мы создаем ваш идеальный климат. Уже 10 лет. */
+
+  width: 722px;
+  height: 231px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.aboutDescribeFrame {
+  /* Frame 11 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 208px;
+  gap: 10px;
+}
+.aboutDescribeFrameText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.aboutMainFrame {
+  /* Frame 12 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 200px;
+  gap: 20px;
+
+  width: 100%;
+  height: 487px;
+}
+
+.aboutMainContent {
+  /* Frame 13 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+
+  width: 365px;
+  height: 487px;
+}
+
+.aboutMainContentLayoutIcon {
+  width: 170px;
+  height: 170px;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMainContentLayoutHeader {
+  /* Frame 18 */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMainContentLayoutHeaderText {
+  /* Качество */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #000000;
+}
+.aboutMainContentLayoutBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 10px;
+}
+.aboutMainContentLayoutBodyText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+
+  color: #000000;
+}
+.aboutButtonFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 30px;
+  gap: 10px;
+
+  width: 100%;
+  height: 113px;
+}
+.aboutButtonLayout {
+  /* Frame 8 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 101px;
+  gap: 10px;
+
+  width: 436px;
+  height: 93px;
+
+  background: #b3a23e;
+  border-radius: 40px;
+}
+
+.aboutButtonLayoutText {
+  width: 404px;
+  height: 48px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+
+.ratePage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  background: #ffffff;
+}
+
+.rateHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 100%;
+}
+.rateHeaderText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.rateBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 90px;
+  gap: 70px;
+
+  width: 100%;
+}
+
+.rateBodyContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 0px;
+  gap: 10px;
+
+  background: #f2f2f2;
+  border-radius: 50px;
+}
+
+.rateBodyContentHeader {
+  /* Frame 23 */
+
+  box-sizing: border-box;
+  width: 100%;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 19px;
+  gap: 10px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+.rateBodyContentHeaderText {
+  /* Стандартный монтаж */
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+
+  color: #000000;
+}
+.rateBodyContentLayout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.rateBodyContentLayoutImg {
+  box-sizing: border-box;
+
+  width: 379px;
+  height: 380px;
+
+  background: url("/images/install.jpg") center/contain no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+}
+.rateBodyContentLayoutPrice {
+  /* Frame 27 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+
+  /* Inside auto layout */
+  flex: none;
+  align-self: stretch;
+}
+.rateBodyContentLayoutPriceNow {
+  /* Frame 28 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.rateBodyContentLayoutPriceNowText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #000000;
+
+  /* Inside auto layout */
+}
+.rateBodyContentLayoutPriceBefore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  flex: none;
+  align-self: stretch;
+}
+.rateBodyContentLayoutPriceBeforeText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  /* identical to box height */
+  text-align: center;
+  text-decoration-line: line-through;
+
+  color: rgba(0, 0, 0, 0.58);
+}
+.rateBodyContentLayoutButtonFrame {
+  /* Frame 28 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+
+  flex: none;
+  align-self: stretch;
+}
+
+.rateBodyContentLayoutButton {
+  /* Frame 8 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 21px;
+  gap: 10px;
+
+  background: #b3a23e;
+  border-radius: 40px;
+}
+
+.rateBodyContentLayoutButtonText {
+  /* Заказать установку */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  color: #ffffff;
+}

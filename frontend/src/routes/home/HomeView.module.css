@@ -1,0 +1,931 @@
+/* Базовые настройки для адаптивности */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pageFrame {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("/images/mainFrame.jpg") 45% 55% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 201px;
+  background: rgba(0, 0, 0, 0.63);
+}
+
+.logoFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 100px;
+  min-height: 201px;
+  min-width: 300px;
+}
+
+.navigateFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navigateText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.contactFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-width: 100px;
+  max-width: 350px;
+  padding: 20px;
+  margin-left: auto;
+}
+
+.contactText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  color: #ffffff;
+  text-align: end;
+  max-width: 100%;
+}
+
+.mainFrame {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mainContentFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 50px;
+  max-width: 912px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mainContentFrameHeaderText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.mainContentFrameText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(18px, 3vw, 32px);
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.buttonMainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 40px;
+  background: #b3a23e;
+  border-radius: 40px;
+  min-height: 65px;
+  width: 100%;
+  max-width: 293px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.buttonMainContent:hover {
+  transform: scale(1.05);
+}
+
+.buttonMainContentText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pageAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  width: 100%;
+  background: #f6f6f6;
+  min-height: 100vh;
+}
+
+.aboutHeaderFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.aboutHeaderFrameText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(32px, 5vw, 58px);
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+}
+
+.aboutDescribeFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  gap: 10px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.aboutDescribeFrameText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(18px, 3vw, 28px);
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+}
+
+.aboutMainFrame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 20px;
+  gap: 30px;
+  width: 100%;
+}
+
+.aboutMainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  width: 100%;
+  max-width: 365px;
+  min-width: 280px;
+}
+
+.aboutMainContentLayoutIcon {
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMainContentLayoutHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.aboutMainContentLayoutHeaderText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+}
+
+.aboutMainContentLayoutBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 100%;
+}
+
+.aboutMainContentLayoutBodyText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(16px, 2.5vw, 32px);
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+}
+
+.aboutButtonFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+}
+
+.aboutButtonLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 10px;
+  background: #b3a23e;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 336px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.aboutButtonLayout:hover {
+  transform: scale(1.05);
+}
+
+.aboutButtonLayoutText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.ratePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 35px;
+  width: 100%;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.rateHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+}
+
+.rateHeaderText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+}
+
+.rateBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 30px;
+  gap: 40px;
+  width: 100%;
+}
+
+.rateBodyContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 450px;
+  min-width: 280px;
+}
+
+.rateBodyContentHeader {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.rateBodyContentHeaderText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(20px, 3vw, 32px);
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+}
+
+.rateBodyContentLayout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.rateBodyContentLayoutImg {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  max-width: 379px;
+  background: url("/images/install.jpg") center/cover no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+  border-radius: 20px;
+}
+.rateBodyContentLayoutImg2 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  max-width: 379px;
+  background: url("/images/service.jpg") center/cover no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+  border-radius: 20px;
+}
+.rateBodyContentLayoutImg3 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  max-width: 379px;
+  background: url("/images/repair.jpg") center/cover no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+  border-radius: 20px;
+}
+.rateBodyContentLayoutPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  gap: 10px;
+}
+
+.rateBodyContentLayoutPriceNow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.rateBodyContentLayoutPriceNowText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+}
+
+.rateBodyContentLayoutPriceBefore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.rateBodyContentLayoutPriceBeforeText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(20px, 2.5vw, 32px);
+  line-height: 1.2;
+  text-align: center;
+  text-decoration-line: line-through;
+  color: rgba(0, 0, 0, 0.58);
+}
+
+.rateBodyContentLayoutButtonFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.rateBodyContentLayoutButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 40px;
+  background: #b3a23e;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rateBodyContentLayoutButton:hover {
+  transform: scale(1.05);
+}
+
+.rateBodyContentLayoutButtonText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.examplePage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.exampleHeader {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.exampleHeaderText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.exampleContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.exampleItem {
+  width: 100%;
+  aspect-ratio: 16/9; /* Соотношение сторон */
+  overflow: hidden;
+}
+.exampleImage,
+.exampleVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bidPage {
+  /* Frame 22 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("/images/bidPage.jpg") 55% 55% / cover no-repeat;
+}
+
+.bidHeader {
+  /* Frame 50 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 150px;
+  gap: 10px;
+
+  flex: none;
+  align-self: stretch;
+}
+
+.bidHeaderText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.bidDescribe {
+  /* Frame 51 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 450px;
+  gap: 10px;
+}
+
+.bidDescribeText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 58px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.bidContent {
+  /* Frame 52 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 300px;
+  gap: 10px;
+}
+
+.bidContentInput {
+  /* Frame 54 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+}
+.inputField {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  height: 80px;
+  background: #d9d9d9;
+  border-radius: 30px;
+  /* Стили для текста */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 130%;
+  color: #9f9f9f; /* Серый по умолчанию */
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.inputField:focus {
+  color: #0d0d0d; /* Черный цвет при фокусе */
+}
+
+.inputField.filled {
+  color: #0d0d0d; /* Черный когда значение изменено */
+}
+.bidContentInputItem {
+  width: 527px;
+  height: 100px;
+}
+.bidContentInputItemText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.bidContentInputItemRect {
+  background: #d9d9d9;
+  border-radius: 30px;
+}
+.bidContentButtonFrame {
+  /* Frame 56 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.bidContentButton {
+  width: 260px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: #b3a23e;
+  border-radius: 40px;
+}
+.bidContentButtonText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+  color: #ffffff;
+}
+
+/* Медиа-запросы для дополнительной адаптивности */
+@media (max-width: 1200px) {
+  .pageHeader {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contactFrame {
+    position: static;
+    width: 100%;
+  }
+
+  .aboutMainFrame {
+    padding: 40px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigateFrame {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .navigateText {
+    font-size: 20px;
+  }
+
+  .contactText {
+    font-size: 24px;
+  }
+
+  .mainContentFrame {
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+
+  .aboutHeaderFrame {
+    padding: 20px 10px;
+  }
+
+  .aboutDescribeFrame {
+    padding: 0px 10px;
+  }
+
+  .rateBody {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .rateBodyContent {
+    max-width: 350px;
+  }
+
+  .exampleHeaderText {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .exampleContent {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 10px;
+  }
+
+  .bidPage {
+    padding: 80px 20px;
+  }
+
+  .bidHeader {
+    padding: 10px 20px;
+  }
+
+  .bidHeaderText {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .bidDescribe {
+    padding: 10px 20px;
+  }
+
+  .bidDescribeText {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .bidContent {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 0;
+  }
+
+  .bidContentButtonFrame {
+    align-items: stretch;
+  }
+
+  .bidContentButton {
+    width: 100%;
+  }
+
+  .inputField {
+    height: 64px;
+    font-size: 20px;
+  }
+
+  .floatingMessage {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .privatePage {
+    padding: 30px 20px;
+  }
+
+  .privateHeader,
+  .privateBody {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttonMainContent,
+  .aboutButtonLayout,
+  .rateBodyContentLayoutButton {
+    padding: 15px 20px;
+    min-height: 80px;
+  }
+
+  .aboutMainContent {
+    min-width: 100%;
+  }
+
+  .rateBodyContent {
+    min-width: 100%;
+  }
+
+  .rateBodyContentLayoutImg {
+    height: 250px;
+  }
+
+  .exampleContent {
+    grid-template-columns: 1fr;
+  }
+
+  .bidHeaderText {
+    font-size: 26px;
+  }
+
+  .bidDescribeText {
+    font-size: 18px;
+  }
+
+  .inputField {
+    height: 56px;
+    font-size: 18px;
+  }
+
+  .floatingMessage {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+.floatingMessage {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  animation: floatMessage 3s ease-in-out infinite;
+}
+
+@keyframes floatMessage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.privatePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 40px;
+  background: #000000;
+}
+.privateHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  padding: 15px 40px;
+}
+.privateBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  padding: 25px 40px;
+}
+.privateText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 39px;
+  color: #ffffff;
+}
