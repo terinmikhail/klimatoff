@@ -1,6 +1,6 @@
 export default function ConfidentialityView() {
-    const url = "http://localhost:5173/"
-    const urlPrivate = "http://localhost:5173/private"
+    const url = "http://klimatoff76.ru/"
+    const urlPrivate = "http://klimatoff76.ru/private"
     return (
         <div class="policy-container">
             <h2>Политика в отношении обработки персональных данных</h2>
