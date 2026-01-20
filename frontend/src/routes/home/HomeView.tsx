@@ -553,10 +553,8 @@ export default function HomeView() {
                 </div>
                 <div class={styles.privateBody}>
                     <span class={styles.privateText}>
-                        ИП Коршунов Виталий Юрьевич
                     </span>
                     <span class={styles.privateText}>
-                        ИНН ----------
                     </span>
                 </div>
 
