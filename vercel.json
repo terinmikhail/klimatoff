@@ -23,5 +23,8 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+   "env": {
+    "VERCEL_IPV6_ENABLED": "false"
+  }
 }
